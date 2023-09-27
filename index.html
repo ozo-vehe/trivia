@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Trivia</h1>
+    <section class="register">
+      <form class="registerForm">
+        <input type="text" name="username" placeholder="Enter your name" required>
+        <button type="submit">Register</button>
+      </form>
+
+      <h2 class="username">John Doe
+      </h2>
+    </section>
+  </header>
+
+  <main class="triviaHome">
+    <div>
+      <h3>Choose trivia details below</h3>
+      <form class="quizCategoryForm">
+        <div class="category">
+          <label for="quizCategory">Category</label>
+          <select id="quizCategory">
+          </select>
+        </div>
+
+        <div class="difficulty">
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty">
+            <option value="any">Any difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+
+        <div class="triviaType">
+          <label for="triviType">Trivia type</label>
+          <select id="triviType">
+            <option value="any">Any type</option>
+            <option value="multiple">Multiple choice</option>
+            <option value="boolean">True/False</option>
+          </select>
+        </div>
+
+        <button class="getStarted">Get started</button>
+      </form>
+    </div>
+  </main>
+
+  <section class="hide questionsContainer">
+    <div class="questions">
+      <!-- Question goes here -->
+    </div>
+
+    <button class="next">Next</button>
+    <button class="hide finish">Finish</button>
+  </section>
+
+  <section class="hide resultContainer">
+    <h3>Result</h3>
+    <div class="result">
+      <p>Total questions: <span class="totalQuestions">20</span></p>
+      <p>Correct: <span class="correct">0</span></p>
+      <p>Wrong: <span class="wrong">0</span></p>
+      <p>Unanswered: <span class="unanswered">0</span></p>
+      <p>Percentage: <span class="percentage">100%</span></p>
+    </div>
+    <button class="home">Home</button>
+  </section>
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
